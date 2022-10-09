@@ -10,28 +10,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
  
 <header>
-    <nav>
+    <div class="nav-line">
+    <nav class="nav-line-item">
       <a class="logo-font" href="./index.html"><span style="color: var(--color-blue);">Web</span>Studio</a>
-      <ul class="list">
-          <li><a class="link" href="./index.html">Cтудія</a></li>
-          <li><a class="link link-opened-page" href="./portfolio.html">Портфоліо</a></li>
-          <li><a class="link" href="#contacts">Контакти</a></li>
+      <ul class="list pages-box">
+          <li class="pages-item"><a class="link" href="./index.html">Cтудія</a></li>
+          <li class="pages-item"><a class="link link-opened-page" href="./portfolio.html">Портфоліо</a></li>
+          <li class="pages-item"><a class="link" href="#contacts">Контакти</a></li>
       </ul>
     </nav>
-      <ul class="list">
-        <li><a class="link link-contacts" href="mailto:info@example.com">info@devstudio.com</a></li>
-        <li><a class="link link-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="list nav-line-item pages-box">
+        <li class="pages-item"><a class="link link-contacts" href="mailto:info@example.com">info@devstudio.com</a></li>
+        <li class="pages-item"><a class="link link-contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
+    </div>
   </header> 
 
 <main>
+    <div class="container-portfolio">
     <section>
-        <ul class="list">
+        <ul class="list filter-portfolio">
             <li><button class="button-for-filter" type="button">Усі</button></li>
             <li><button class="button-for-filter" type="button">Веб-сайти</button></li>
             <li><button class="button-for-filter" type="button">Додатки</button></li>
@@ -40,60 +44,62 @@
         </ul>
     </section>
     <section class="portfolio-options">
-        <ul class="list">
-            <li>
+        <ul class="list portfolio-box">
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img1.jpg" alt="progect1" width="370">
                 <h3>Технокряк</h3>
                 <p>Веб-сайт</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img2.jpg" alt="progect2" width="370">
                 <h3>Постер New Orlean vs Golden Star</h3>
                 <p>Дизайн</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img3.jpg" alt="progect3" width="370">
                 <h3>Ресторан Seafood</h3>
                 <p>Додаток</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img4.jpg" alt="progect4" width="370">
                 <h3>Проєкт Prime</h3>
                 <p>Маркетинг</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img5.jpg" alt="progect5" width="370">
                 <h3>Проєкт Boxes</h3>
                 <p>Додаток</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img6.jpg" alt="progect6" width="370">
                 <h3>Inspiration has no Borders</h3>
                 <p>Веб-сайт</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img7.jpg" alt="progect7" width="370">
                 <h3>Видання Limited Edition</h3>
                 <p>Дизайн</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img8.jpg" alt="progect8" width="370">
                 <h3>Проєкт LAB</h3>
                 <p>Маркетинг</p>
             </li>
-            <li>
+            <li class="portfolio-item">
                 <img src="./images/portfolio/img9.jpg" alt="progect9" width="370">
                 <h3>Growing Business</h3>
                 <p>Додаток</p>
             </li>
         </ul>
     </section>
+    </div>
 </main>
 
-<footer class="section-dark">
+<footer class="section-dark footer-container">
+    <div class="footer-box"></div>
     <a class="logo-font" href="./index.html"><span style="color: var(--color-blue);">Web</span>Studio</a>
     <address id="contacts">
-     <ul class="list">
+     <ul class="list footer-items">
       <li><a class="link" href="https://goo.gl/maps/1K6WkKLkkUkgV1Cs8"
             target="_blank"
             rel="noopener noreferrer"
@@ -102,6 +108,7 @@
       <li><a class="link-transp" href="tel:+380961111111">+38 099 111 11 11</a></li>
      </ul>
     </address>
+</div>
 </footer>
 
 </body>
