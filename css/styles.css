@@ -283,6 +283,9 @@ footer .link {
   margin-right: 30px;
 }
 
+/* я не зовсім розумію, як настроїти рівні по боках контейнери, 
+не вирористовуючи margin, а з ним заливка не заливає ці боки */
+
 .container-team {
   padding: 94px 215px;
   text-align: center;
