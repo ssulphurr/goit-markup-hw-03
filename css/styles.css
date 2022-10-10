@@ -6,9 +6,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #212121;
 }
-
-/* normalizer doesn't work */
-
 /* RESET */
 
 p,
@@ -78,10 +75,6 @@ img {
 
 .link-contacts {
   color: #757575;
-}
-
-footer address {
-  font-style: normal;
 }
 
 footer .link {
@@ -170,7 +163,6 @@ footer .link {
   /* or 171% */
 
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
@@ -204,54 +196,40 @@ footer .link {
   /* identical to box height, or 188% */
 
   letter-spacing: 0.03em;
-
   color: #757575;
 }
 
 /* homework 3 */
 
-.nav-line {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 32px 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  border-bottom: solid 1px #ececec;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-/* чомусь назви сторінок прижаті до нижньої границі а не по центру */
-
-.nav-line-item .logo-font {
-  flex-basis: 145px;
-  margin: 24px 93px 25px 0;
-}
-.pages-box {
-  display: inline-flex;
-  justify-content: space-between;
-}
-.pages-item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.container-hero {
-  padding: 200px 452px;
-  text-align: center;
-}
-
-.container-hero .button {
-  margin-top: 30px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
+.section-positioning{
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 94px
+}
+.qualities.section-positioning{
+  padding-bottom: 0;
 }
 
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px; 
+}
 .container-team h2,
 .container h2 {
   text-align: center;
@@ -261,8 +239,35 @@ footer .link {
   margin-bottom: 10px;
 }
 
-.qualities.container {
-  padding-bottom: 0;
+/* header */
+.header-positioning{
+  padding: 24px 0;
+  border-bottom: solid 1px #ececec;
+}
+.nav-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-line .logo-font {
+  flex-basis: 145px;
+  margin-right: 93px;
+}
+.pages-box {
+  display: flex;
+  gap: 30px;
+}
+
+/* hero */
+.container-hero {
+  padding: 200px 0;
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.container-hero h1 {
+  margin-bottom: 30px;
 }
 
 /* our main qualities*/
@@ -270,73 +275,53 @@ footer .link {
   display: flex;
   justify-content: space-between;
 }
-.qualities-item:not(:last-child) {
-  margin-right: 30px;
+.qualities-item {
+  width: 270px;
 }
 
 /* what we do */
 .whatwedo {
   display: flex;
-  justify-content: space-between;
 }
 .whatwedo-item:not(:last-child) {
   margin-right: 30px;
 }
 
-/* я не зовсім розумію, як настроїти рівні по боках контейнери, 
-не вирористовуючи margin, а з ним заливка не заливає ці боки */
-
-.container-team {
-  padding: 94px 215px;
-  text-align: center;
-}
-
+/* our team */
 .team-box {
   display: flex;
-  width: 1200px;
-  margin: 0 auto;
-  justify-content: space-between;
+  gap: 30px;
 }
 .team-item {
-  max-width: 270px;
+  width: 270px;
   background-color: #ffffff;
   border-radius: 0 0 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-item:not(:last-child) {
-  margin-right: 30;
-}
-
 .team-member {
-  margin: 30px 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 10px;
+  padding: 30px;
+  text-align: center;
 }
 
-.footer-container {
-  padding: 60px 215px;
+/* footer */
+.footer-positioning {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .footer-box {
-  width: 1200px;
-  margin: 0 auto;
-}
-.footer-items {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 9px;
+}
+.logo-footer{
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* PORTFOLIO */
 
-.container-portfolio {
-  padding: 94px 215px;
-}
-.filter-portfolio {
+.portfolio-filter {
   display: flex;
   justify-content: center;
   gap: 8px;
@@ -350,4 +335,10 @@ footer .link {
 }
 .portfolio-item {
   flex-basis: calc((100% - 60px) / 3);
+}
+.portfolio-item-description{
+  margin: 20px 24px;
+}
+.portfolio-item-description h3{
+  margin-bottom: 4px;
 }

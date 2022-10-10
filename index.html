@@ -13,17 +13,16 @@
       rel="stylesheet"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <div class="nav-line">
-        <nav class="nav-line-item">
+    <header class="header-positioning">
+      <div class="container nav-line">
+        <nav class="nav-line">
           <a class="logo-font" href="./index.html"
             ><span style="color: var(--color-blue)">Web</span>Studio</a
           >
@@ -33,7 +32,7 @@
             <li class="pages-item"><a class="link" href="#contacts">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="list nav-line-item pages-box">
+        <ul class="list pages-box">
           <li class="pages-item pages-item pages-item">
             <a class="link link-contacts" href="mailto:info@example.com">info@devstudio.com</a>
           </li>
@@ -46,13 +45,16 @@
 
     <main>
       <!-- Hero -->
-      <section class="section-dark container-hero">
+      <section class="section-dark">
+        <div class="container-hero">
         <h1 class="hero-font">Ефективні рішення для вашого бізнесу</h1>
         <button class="button" type="button">Замовити послугу</button>
+        </div>
       </section>
-      <section class="qualities container">
+      <section class="qualities section-positioning">
+        <div class="container">
         <!-- Прихований заголовок -->
-        <h2>Наші головні якості</h2>
+        <h2 class="visually-hidden">Наші головні якості</h2>
         <ul class="list qualities-box">
           <li class="qualities-item">
             <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -71,8 +73,10 @@
             <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
+        </div>
       </section>
-      <section class="container">
+      <section class="section-positioning">
+        <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="list whatwedo">
           <li class="whatwedo-item">
@@ -93,8 +97,10 @@
             />
           </li>
         </ul>
+        </div>
       </section>
-      <section class="section-gray team container-team">
+      <section class="section-gray team section-positioning">
+        <div class="container">
         <h2 class="section-title">Наша команда</h2>
         <ul class="list team-box">
           <li class="team-item">
@@ -142,16 +148,17 @@
             </div>
           </li>
         </ul>
+        </div>
       </section>
     </main>
 
-    <footer class="section-dark footer-container">
-      <div class="footer-box">
-        <a class="logo-font" href="/index.html"
+    <footer class="section-dark footer-positioning">
+      <div class="container">
+        <a class="logo-font logo-footer" href="/index.html"
           ><span style="color: var(--color-blue)">Web</span>Studio</a
         >
         <address id="contacts">
-          <ul class="list footer-items">
+          <ul class="list footer-box">
             <li>
               <a
                 class="link"
